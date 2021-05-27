@@ -3,7 +3,7 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 242px;
   pointer-events: none;
 }
 
@@ -13,17 +13,13 @@
   }
 }
 
-.App-header {
-  min-height: 100vh;
+.landing {
+  min-height: 50vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-}
-
-.App-link {
-  color: rgb(112, 76, 182);
+  font-size: calc(5px + 2vmin);
 }
 
 @keyframes App-logo-float {
@@ -36,4 +32,15 @@
   100% {
     transform: translateY(0px);
   }
+}
+
+.btn {
+  margin-top: 60px;
+  background: #2A455E;
+  border-radius: 11px;
+  padding: 15px 17px;
+  color: #3EB8C1;
+  display: inline-block;
+  font: normal bold 23px/1 'Open Sans', sans-serif;
+  text-align: center;
 }

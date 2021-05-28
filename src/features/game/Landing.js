@@ -7,7 +7,7 @@ export const Landing = () => {
     <div className='landing'>
       <img src={full} className='App-logo' alt='logo' />
       <Link to='/game'>
-        <button className='btn'>Start Game</button>  
+        <button className='btn-start'>Start Game</button>  
       </Link>
       
     </div>

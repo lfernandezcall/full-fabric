@@ -62,4 +62,11 @@
   text-align: center;
   border-radius: 11px;
   color: #3EB8C1;
-}  
+}
+
+.attacker{
+  transform: scale(1.04, 1.04);
+  -moz-box-shadow:5px 5px 5px #191919;
+  -webkit-box-shadow:5px 5px 5px #191919;
+  box-shadow:5px 5px 5px #191919;
+}

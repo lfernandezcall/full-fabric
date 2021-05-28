@@ -2,11 +2,12 @@ import React from 'react';
 import { Dice } from './Dice';
 
 export const Player = (props) => {
+    const {attacker, name, hp} = props
     return (
-        <div className='player'>
+        <div className={attacker === name ? 'player attacker' : 'player'}>
             <Dice />
-            <h2>{props.name}</h2>
-            <h2>HP: {props.hp}</h2>
+            <h2>{name}</h2>
+            <h2>HP: {hp}</h2>
         </div>
     )
 };

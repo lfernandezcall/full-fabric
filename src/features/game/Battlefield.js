@@ -13,8 +13,8 @@ export const Battlefield = () => {
   return (
     <div className='battlefield-container'>
       <div className='players-container'>
-        <Player name={'Player 1'} hp={20} />
-        <Player name={'Player 2'} hp={20} />
+        <Player name={'Player 1'} hp={20} attacker={attacker}/>
+        <Player name={'Player 2'} hp={20} attacker={attacker}/>
       </div>
       {score.winner !== true ?
         <div>

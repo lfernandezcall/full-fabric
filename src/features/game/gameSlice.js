@@ -64,9 +64,8 @@ export const gameSlice = createSlice({
   }
 });
 
-export const selectDices = (state) => state.game.players.map((player) => player.dice);
 export const selectInitialGame = (state) => state.game.initialTurn;
-export const selectTurn = (state) => state.game.players.map((player) => player.attacker);
+export const selectPlayers = (state) => state.game.players;
 export const selectState = (state) => state.game;
 export const selectAssault = (state) =>
   state.game.players.reduce((acc, item) => {

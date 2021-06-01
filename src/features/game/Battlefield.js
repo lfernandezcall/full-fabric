@@ -2,8 +2,7 @@ import React, { useEffect } from 'react';
 import { Player } from './Player';
 import { useSelector, useDispatch } from 'react-redux';
 import {
-  selectTurn,
-  selectDices,
+  selectPlayers,
   selectState,
   selectDamage,
   selectAssault,
@@ -19,8 +18,7 @@ import {
 export const Battlefield = () => {
   const dispatch = useDispatch();
   const state = useSelector(selectState);
-  const dices = useSelector(selectDices);
-  const turn = useSelector(selectTurn);
+  const players = useSelector(selectPlayers);
   const damage = useSelector(selectDamage);
   const assault = useSelector(selectAssault);
   const initialGame = useSelector(selectInitialGame);
@@ -41,8 +39,9 @@ export const Battlefield = () => {
   return (
     <div className='battlefield-container'>
       <div className='players-container'>
-        <Player dice={dices[0]} name={'Player 1'} hp={state.players[0].hp} attacker={turn[0]} />
-        <Player dice={dices[1]} name={'Player 2'} hp={state.players[1].hp} attacker={turn[1]} />
+        {players.map((player) => (
+          <Player key={player.name} dice={player.dice} name={player.name} hp={player.hp} attacker={player.attacker} />
+        ))}
       </div>
       {gameOver !== true ? (
         <div>

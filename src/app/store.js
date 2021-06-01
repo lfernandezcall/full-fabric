@@ -3,6 +3,6 @@ import gameReducer from '../features/game/gameSlice';
 
 export const store = configureStore({
   reducer: {
-    counter: gameReducer,
+    game: gameReducer,
   },
 });

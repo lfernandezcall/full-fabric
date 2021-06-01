@@ -6,10 +6,9 @@ export const Landing = () => {
   return (
     <div className='landing'>
       <img src={full} className='App-logo' alt='logo' />
-      <Link to='/game'>
-        <button className='btn-start'>Start Game</button>  
+      <Link className='btn-start' to='/game'>
+        Start Game
       </Link>
-      
     </div>
   );
 };

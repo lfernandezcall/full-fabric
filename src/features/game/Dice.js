@@ -1,10 +1,9 @@
-import { rollDice } from './helper/rollDice';
 import React from 'react';
 
-export const Dice = () => {
+export const Dice = (props) => {
   return (
     <div className='dice'>
-      <h1>{rollDice()}</h1>
+      <h1>{props.result}</h1>
     </div>
   );
 };
